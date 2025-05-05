@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="./assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="spo.css">
+    <title>Spotify-web player:music for everyone</title>
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-opt">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">home</a>
+                </div>
+                <div class="nav-opt">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="opt">
+                    <div class="libopt nav-opt">
+                        <i class="fa-solid fa-book"></i>
+                        <a href="#">your library</a>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="libbox">
+                    <div class="box">
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy,we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1">Let's find some podcasts to follow</p>
+                        <p class="box-p2">We'll keep you update on new episodes</p>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="stnav">
+                <div class="stnavimg">
+                    <img src="./assets/backward_icon.png" alt="backward">
+                    <img src="./assets/forward_icon.png" class="hide" alt="forward">
+                </div>
+                <div class="stnavbut">
+                    <button class="badge navitem hide">explore premium</button>
+                    <button class="badge navitem darkbadge"><i class="fa-regular fa-circle-down" style="margin-right: 2px;"></i>install app</button>
+                    <i class="fa-regular fa-user navitem"></i>
+                </div>
+            </div>
+            <h2>Recently played</h2>
+            <div class="container">
+                <div class="card">
+                    <img src="covers/1.jpg" class="cardimg" alt="">
+                    <p class="card-title">Legion</p>
+                    <p class="card-info">fire</p>
+                </div>
+            </div>
+            <h2>Trending songs near you</h2>
+            <div class="container">
+                <div class="card">
+                    <img src="covers/2.jpg" class="cardimg" alt="">
+                    <p class="card-title">Trap</p>
+                    <p class="card-info">trip on trap</p>
+                </div>
+                <div class="card">
+                    <img src="covers/3.jpg" class="cardimg" alt="">
+                    <p class="card-title">They mad</p>
+                    <p class="card-info">The mad man...</p>
+                </div>
+                <div class="card">
+                    <img src="covers/4.jpg" class="cardimg" alt="">
+                    <p class="card-title">Rich the kid</p>
+                    <p class="card-info">Richie rich...</p>
+                </div>
+                <div class="card">
+                    <img src="covers/5.jpg" class="cardimg" alt="">
+                    <p class="card-title">Give up</p>
+                    <p class="card-info">song title...</p>
+                </div>
+                <div class="card">
+                    <img src="covers/6.jpg" class="cardimg" alt="">
+                    <p class="card-title">The safety dance</p>
+                    <p class="card-info">The last dance...</p>
+                </div>
+            </div>
+            <h2>Featured playlist</h2>
+            <div class="container">
+                <div class="card">
+                    <img src="covers/7.jpg" class="cardimg" alt="">
+                    <p class="card-title">Back it up</p>
+                    <p class="card-info">Bring it on...</p>
+                </div>
+                <div class="card">
+                    <img src="covers/8.jpg" class="cardimg" alt="">
+                    <p class="card-title">Oh beauty</p>
+                    <p class="card-info">beauty and the beast...</p>
+                </div>
+                <div class="card">
+                    <img src="covers/9.jpg" class="cardimg" alt="">
+                    <p class="card-title">lone girl</p>
+                    <p class="card-info">wanna come over...</p>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="music-player">
+            <div class="songpic">
+                <img src="covers/1.jpg" class="songimg">
+            </div>
+            <div class="songinfo">
+                <p class="songname">Legion</p>
+                <p class="singer">the fire</p>
+            </div>
+            <div class="bottom">
+                <input type="range" name="range" id="myprogressbar">
+                <div class="icons">
+                    <img src="./assets/player_icon1.png" alt="shuffle" class="s" id="play">
+                    <img src="./assets/player_icon2.png" alt="backward" class="s">
+                    <img src="./assets/player_icon3.png" alt="play" class="s">
+                    <img src="./assets/player_icon4.png" alt="forward" class="s forward">
+                    <img src="./assets/player_icon5.png" alt="replay"class="s">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="spot.js"></script>
+</html>
